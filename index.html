@@ -12,37 +12,69 @@
 </head>
 <body>
     
-<!-- Nav bar -->
+<!-- Barre de navigation -->
 <header class="header">
-    <img class="headerImg" src="image/Reservia@3x.png" alt="Reservia">
-    <nav class="headerNav">
-      <a class="headerNavLink" href="#Hosting"data-active="true">Hébergement</a>
-      <a class="headerNavLink" href="#Activity"data-active="false">Activité</a>
+    <img class="logoMain" src="image/Reservia@3x.png" alt="Reservia">
+    <nav class="navigationMain">
+      <a class="navigationMainLien" href="#Hosting"data-active="true">Hébergement</a>
+      <a class="navigationMainLien" href="#Activity"data-active="false">Activité</a>
     </nav>           
-    <a class="headerSignup" href="#Signup">S'inscrire</a>
+    <a class="sinscrireMain" href="#Signup">S'inscrire</a>
 </header>
-<!-- Nav bar -->
+<!-- Barre de navigation -->
 <!-- MAIN -->
 <main class="main">
-<!-- SEARCH -->
-    <section class="search">
-      <header class="searchHeader">
-        <h1 class="searchHeaderTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p class="searchHeaderSubtitle">En plein centre de ville ou en pleine nature</p>
+<!-- Barre de recherche -->
+    <section class="recherche">
+      <header class="rechercheMain">
+        <h1 class="titreRechercheMain">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="titreSubtileMain">En plein centre de ville ou en pleine nature</p>
     </header>
     <form class="searchForm" action="proceedFrom.html" method="GET">
         <span class="searchFormWrapicon">
-          <i class="fas fa-map-marker-alt searchFormWrapiconIcon"></i>
-        </span>
+          <i class="fas fa-map-marker-alt searchFormWrapiconIcon"></i></span>
         <input class="searchFormSearchinput" type="search" placeholder="Marseille, France" size="1">
         <button class="searchFormSubmitinput">
           <span class="searchFormSubmitinputText">Rechercher</span>
           <i class="searchFormSubmitinputIcon fas fa-search"></i>
         </button>
       </form>
-
-
-
-
+  <!-- Filtre de recherche -->
+  <div class="filtre">
+      <h2 class="titreFiltre">Filtres</p></h2>
+        <!-- Filtre économique -->
+        <div class="filtreRechercheLogement">
+              <div class="filtreBouton">
+                <i class="fas fa-money-bill-wave filtreBoutonLogo">
+              </div>
+            <Span class="filtreRechercheSpan">Économique</Span>
+        </div>
+        <!-- Filtre Familial -->
+        <div class="filtreRechercheLogement">
+              <div class="filtreBouton">
+                <i class="fas fa-child filtreBoutonLogo"></i>
+              </div>
+            <Span class="filtreRechercheSpan">Familial</Span>
+        </div>
+        <!-- Filtre Romantique -->
+        <div class="filtreRechercheLogement">
+              <div class="filtreBouton">
+                <i class="fas fa-heart filtreBoutonLogo"></i>
+              </div>
+            <Span class="filtreRechercheSpan">Romantique</Span>
+        </div>
+        <!-- Filtre Animaux -->
+        <div class="filtreRechercheLogement">
+              <div class="filtreBouton">
+                <i class="fas fa-dog filtreBoutonLogo"></i>
+              </div>
+            <Span class="filtreRechercheSpan">Animaux</Span>
+        </div>
+        <!-- Filtre info -->
+          <div class="filtreInfo">
+              <div class="logoInfo"><i class="fas fa-info"></i></div>
+              <p class="filtreInfoTexte">Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
+</section>
 </body>
 </html>
