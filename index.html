@@ -7,14 +7,14 @@
     <title>Reservia</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/df344a6829.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
 <!-- Barre de navigation -->
 <header class="header">
-    <img class="logoMain" src="image/Reservia@3x.png" alt="Reservia">
+    <img class="logoMain" src="img/Reservia@3x.png" alt="Reservia">
     <nav class="navigationMain">
       <a class="navigationMainLien" href="#Hosting"data-active="true">Hébergement</a>
       <a class="navigationMainLien" href="#Activity"data-active="false">Activité</a>
@@ -40,41 +40,55 @@
         </button>
       </form>
   <!-- Filtre de recherche -->
-  <div class="filtre">
+  <div class="filtres">
+    <div class="container">
       <h2 class="titreFiltre">Filtres</h2>
         <!-- Filtre économique -->
         <div class="filtreRechercheLogement">
-              <div class="filtreBouton">
-                <i class="fas fa-money-bill-wave filtreBoutonLogo">
-              </div>
-            <Span class="filtreRechercheSpan">Économique</Span>
-          </div>
+          <div class="filtreLogo"><i class="fas fa-money-bill-wave-alt filtreBoutonLogo"></i></div>
+            <p class="filtreRechercheSpan">Économique</p>
+        </div>
         <!-- Filtre Familial -->
         <div class="filtreRechercheLogement">
-              <div class="filtreBouton">
-                <i class="fas fa-child filtreBoutonLogo"></i>
-              </div>
-            <Span class="filtreRechercheSpan">Familial</Span>
+          <div class="filtreLogo"><i class="fas fa-child filtreBoutonLogo"></i></div>
+            <p class="filtreRechercheSpan">Familial</p>
         </div>
         <!-- Filtre Romantique -->
         <div class="filtreRechercheLogement">
-              <div class="filtreBouton">
-                <i class="fas fa-heart filtreBoutonLogo"></i>
-              </div>
-            <Span class="filtreRechercheSpan">Romantique</Span>
+              <div class="filtreLogo"><i class="fas fa-heart filtreBoutonLogo"></i></div>
+            <p class="filtreRechercheSpan">Romantique</p>
         </div>
         <!-- Filtre Animaux -->
         <div class="filtreRechercheLogement">
-              <div class="filtreBouton">
-                <i class="fas fa-dog filtreBoutonLogo"></i>
-              </div>
-            <Span class="filtreRechercheSpan">Animaux</Span>
+          <div class="filtreLogo"><i class="fas fa-dog filtreBoutonLogo"></i></div>
+            <p class="filtreRechercheSpan">Animaux</p>
         </div>
+      </div>
+  </div>
         <!-- Filtre info -->
           <div class="filtreInfo">
               <div class="logoInfo"><i class="fas fa-info"></i></div>
               <p class="filtreInfoTexte">Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
 </section>
+        <!-- Hébergement à Marseille  -->
+
+  <section class="hebergementGrillePrincipale">
+      <div class="hebergementMarseille">
+
+
+
+
+      </div>
+
+      <aside class="lePlusPopulaire">
+
+
+
+      </aside>
+  </section>
+
+
+
 </body>
 </html>
