@@ -71,28 +71,5 @@
               <p class="filtreInfoTexte">Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
 </section>
-        <!-- Hébergement à Marseille  -->
-
-<section class="hebergementGrillePrincipale">
-    <div class="hebergementMarseille">
-        <header class="titreHebergementMarseille"></header>
-          <div class="hebergementPhotoMarseille"></div>
-          <div class="hebergementPhotoMarseille"></div>
-          <div class="hebergementPhotoMarseille"></div>
-          <div class="hebergementPhotoMarseille"></div>
-          <div class="hebergementPhotoMarseille"></div>
-          <div class="hebergementPhotoMarseille"></div>
-          <a class="afficherPlus" href="#">Afficher plus</a>
-    </div>
-        <aside class="lePlusPopulaire">
-          <h2 class="lesPlusPopulaire">"Les plus populaire" </h2>
-          <article class="hebergementPhotoMarseilleLesPlusPopulaire"></article>
-          <article class="hebergementPhotoMarseilleLesPlusPopulaire"></article>
-          <article class="hebergementPhotoMarseilleLesPlusPopulaire"></article>
-      </aside>
-  </section>
-
-
-
 </body>
 </html>
