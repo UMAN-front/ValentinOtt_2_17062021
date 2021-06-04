@@ -18,8 +18,6 @@ a {
 }
 h1 {
   font-size: 2em;
-  
-
 }
 .logoMain {
   grid-area: inherit;
@@ -197,31 +195,91 @@ p {
     margin-right: 1rem;
     color: #0065FC;
   }
-  p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0pc;
-    margin-inline-end: 0pc;
-  }
+  /* Hebergement Marseille  */
+  
   .hebergementGrillePrincipale {
     display: grid;
     column-gap: 2rem;
     grid-template-columns: 6fr 3fr;
   }
   .hebergementMarseille {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  .hebergementPrincipal {
   border-radius: 1.5rem;
   padding: 2rem;
   }
-  .lePlusPopulaire {
+  .lesPlusPopulaire {
     display: grid;
-    border-radius: 1.5rem;
-    padding: 2rem;
+    row-gap: 2rem;
+    align-items: start;
+    grid-template-rows: auto repeat(3, 1fr);
   }
   .titreHebergementMarseille {
     grid-column: 1/-1;
   }
   .titreTexteHebergementMarseille {
     margin: 0;
-
   }
+  .hebergementPrincipal {
+    background-color: white;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .cadreHebergementMarseille {
+    margin: 0;
+  }
+  .cadreHerbergementMarseilleImg {
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  h3 {
+    margin: 0.25rem 0.75rem 0 0.75rem;
+  }
+  .hebergementMarseille, .lesPlusPopulaire {
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2rem;
+  } 
+  .lesPlusPopulaireTitre {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hebergementPopulairecontenant {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
+  }
+  .cadreHebergementMarseille {
+    position: relative;
+    min-height: 100%;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+  }
+ .cadrePopulaireImg {
+   border-radius: 1rem 0 0 1rem;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ .populaireContenantTexte {
+  display: flex;
+  flex-direction: column;
+
+ }
