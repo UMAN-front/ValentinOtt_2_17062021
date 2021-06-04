@@ -139,7 +139,7 @@ h2 {
     display: flex;
     align-items: center;
     margin-right: 2rem;
-    border: 2px #F2F2F2 solid;
+    border: 2px #d9d9d9 solid;
     border-radius: 2rem;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -165,13 +165,6 @@ h2 {
   font-weight: 630;
   margin: 0 1rem;
 }
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0pc;
-  margin-inline-end: 0pc;
-}
 .filtreRechercheLogement:hover {
     background-color: #f3f8ff;
     transform: scale(1.015);
@@ -196,7 +189,7 @@ p {
     color: #0065FC;
   }
   /* Hebergement Marseille  */
-  
+
   .hebergementGrillePrincipale {
     display: grid;
     column-gap: 2rem;
@@ -267,9 +260,7 @@ p {
   .cadreHebergementMarseille {
     position: relative;
     min-height: 100%;
-    width: 33%;
     min-width: 33%;
-    max-width: 33%;
   }
  .cadrePopulaireImg {
    border-radius: 1rem 0 0 1rem;
@@ -281,5 +272,13 @@ p {
  .populaireContenantTexte {
   display: flex;
   flex-direction: column;
-
+ }
+ .cadreHebergementMarseilleCaptionTitre { 
+  margin: 0.25rem 0.75rem 0 0.75rem;
+ }
+ .noteHebergementMarseille {
+   margin: 0 0.75rem 0.25rem 0.75rem;
+ }
+ .noteHebergementMarseilleLogo {
+   color: #0065FC;
  }
