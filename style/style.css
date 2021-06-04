@@ -214,6 +214,14 @@ p {
   padding: 2rem;
   }
   .lePlusPopulaire {
+    display: grid;
     border-radius: 1.5rem;
     padding: 2rem;
+  }
+  .titreHebergementMarseille {
+    grid-column: 1/-1;
+  }
+  .titreTexteHebergementMarseille {
+    margin: 0;
+
   }
