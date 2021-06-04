@@ -210,12 +210,10 @@ p {
     grid-template-columns: 6fr 3fr;
   }
   .hebergementMarseille {
-  background: blueviolet ;
   border-radius: 1.5rem;
   padding: 2rem;
   }
   .lePlusPopulaire {
-    background: #3949ab ;
     border-radius: 1.5rem;
     padding: 2rem;
   }
