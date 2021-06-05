@@ -17,7 +17,7 @@ a {
   grid-template-areas: "logo . navbar button";
 }
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .logoMain {
   grid-area: inherit;
@@ -76,7 +76,7 @@ h1 {
   .searchFormWrapicon {
     background-color: #F2F2F2;
     padding: 1rem 1.25rem;
-    border-radius: 0% 100% 6% 94% / 78% 0% 100% 22% ;
+    border-radius: 1rem 0 0 1rem ;
     text-align: center;
   }
   .searchFormWrapiconIcon {
@@ -104,7 +104,7 @@ h1 {
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 0% 100% 14% 86% / 100% 14% 86% 0% ;
+    border-radius: 0 1rem 1rem 0;
     padding: 0 1.5rem;
     font-family: "Raleway", "Sans serif";
     font-size: 1rem;
@@ -196,7 +196,9 @@ h2 {
     grid-template-columns: 6fr 3fr;
   }
   .hebergementMarseille {
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  }
+  .hebergementMarseille {
     display: grid;
     column-gap: 2rem;
     row-gap: 2rem;
@@ -257,11 +259,6 @@ h2 {
     height: 100%;
     overflow: auto;
   }
-  .cadreHebergementMarseille {
-    position: relative;
-    min-height: 100%;
-    min-width: 33%;
-  }
  .cadrePopulaireImg {
    border-radius: 1rem 0 0 1rem;
    position: absolute;
@@ -279,6 +276,22 @@ h2 {
  .noteHebergementMarseille {
    margin: 0 0.75rem 0.25rem 0.75rem;
  }
- .noteHebergementMarseilleLogo {
+ .noteHebergementMarseilleLogo[data-active=true]{
    color: #0065FC;
+ }
+ .noteHebergementMarseilleLogo[data-active=false]{
+  color: #d9d9d9;
+}
+ .cadreLesPlusPopulaire {
+  position: relative;
+  min-height: 100%;
+  width: 33%;
+  min-width: 33%;
+  max-width: 33%;
+ }
+ .afficherPlus {
+   font-weight: bold;
+ }
+ .prixHebergementMarseille {
+  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
  }
