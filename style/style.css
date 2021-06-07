@@ -129,10 +129,6 @@ h1 {
 }
 h2 {
     font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;  
     font-weight: bold; 
 }
 .filtreRechercheLogement {
@@ -162,7 +158,7 @@ h2 {
   color: #0065FC;
 }  
 .filtreRechercheSpan {
-  font-weight: 630;
+  font-weight: 600;
   margin: 0 1rem;
 }
 .filtreRechercheLogement:hover {
