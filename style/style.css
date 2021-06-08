@@ -128,7 +128,7 @@ h1 {
   align-items: center;
 }
 h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold; 
 }
 .filtreRechercheLogement {
@@ -158,7 +158,6 @@ h2 {
   color: #0065FC;
 }  
 .filtreRechercheSpan {
-  font-weight: 600;
   margin: 0 1rem;
 }
 .filtreRechercheLogement:hover {
@@ -291,3 +290,9 @@ h2 {
  .prixHebergementMarseille {
   margin: 0.25rem 0.75rem 0.25rem 0.75rem;
  }
+
+
+
+ /* Footer */
+
+ 
