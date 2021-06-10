@@ -198,6 +198,13 @@ h2 {
     column-gap: 2rem;
     row-gap: 2rem;
   }
+  .hebergementMarseille, .lesPlusPopulaire {
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2rem;
+
+
+  }
   .hebergementPrincipal {
   border-radius: 1.5rem;
   padding: 2rem;
@@ -234,9 +241,6 @@ h2 {
     width: 100%;
     max-height: 100%;
     border-radius: 1rem 1rem 0 0;
-  }
-  h3 {
-    margin: 0.25rem 0.75rem 0 0.75rem;
   }
   .hebergementMarseille, .lesPlusPopulaire {
     background-color: #F2F2F2;
@@ -290,9 +294,91 @@ h2 {
  .prixHebergementMarseille {
   margin: 0.25rem 0.75rem 0.25rem 0.75rem;
  }
+ .cartePopulaireTitre {
+  margin: 0.25rem 0.75rem 0 0.75rem;
+ }
+ .populaireEspaceBlanc {
+  flex: 1;
+ }
+ /* Activité à Marseille */
+ .activite {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+  column-gap: 2rem;
+  margin: 4rem 0;
+ }
+ .activiteTitre {
+  grid-column: 1/ -1;
+ }
+ .activite a {
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.1s;
+ }
+ #activiteUn {
+   grid-row: 2/7;
+   grid-column: 1/2;
+ }
+ #activiteDeux {
+   grid-row: 2/5;
+   grid-column: 2/3;
+ }
+ #activiteTrois {
+   grid-row: 2/7;
+   grid-column: 3/4;
+ }
+ #activiteQuatre {
+   grid-row: 2/3;
+   grid-column: 4/5;
+ }
+ #activiteCinq {
+   grid-row: 6/7;
+   grid-column: 2/3;
+ }
+ #activiteSix {
+   grid-row: 4/7;
+   grid-column: 4/5;
+ }
+ .activiteImg {
+  position: relative;
+  flex: 1;
+ }
+ .activiteImgMarseille {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+ }
+ .activiteImgTitre {
+  margin: 1.2rem 1.5rem;
+
+ }
 
 
 
  /* Footer */
 
- 
+ .footer {
+  background-color: #F2F2F2;
+  width: 100%;
+ }
+ .footerSInformation {
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+ }
+ .footerInformationColone {
+  width: 30%;
+  padding: 2rem 2rem;
+ }
+ .footerInformationColoneLien {
+  display: block;
+  margin: 1rem 0;
+ }
