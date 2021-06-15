@@ -142,6 +142,9 @@ h2 {
     transition-duration: 0.1s;
     font-weight: bold;
   }
+.filtreRechercheLogement:last-child {
+  margin-right: 0;
+} 
 .filtreLogo {
     background-color: #DEEBFF;
     border-radius: 100%;
@@ -184,11 +187,16 @@ h2 {
     color: #0065FC;
   }
   /* Hebergement Marseille  */
-
   .hebergementGrillePrincipale {
     display: grid;
     column-gap: 2rem;
     grid-template-columns: 6fr 3fr;
+  }
+  @media (max-width: 1440px) {
+    .hebergementGrillePrincipale {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }    
   }
   .hebergementMarseille {
   grid-template-columns: repeat(3, 1fr);
@@ -202,8 +210,6 @@ h2 {
     background-color: #F2F2F2;
     border-radius: 1.5rem;
     padding: 2rem;
-
-
   }
   .hebergementPrincipal {
   border-radius: 1.5rem;
@@ -214,6 +220,14 @@ h2 {
     row-gap: 2rem;
     align-items: start;
     grid-template-rows: auto repeat(3, 1fr);
+  }
+  @media (max-width: 1440px) {
+    .lesPlusPopulaire {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto 10rem;
+      column-gap: 2rem;
+      grid-row-start: 1;
+    }
   }
   .titreHebergementMarseille {
     grid-column: 1/-1;
@@ -251,6 +265,11 @@ h2 {
     margin: 0;
     display: flex;
     justify-content: space-between;
+  }
+  @media (max-width: 1440px) { 
+    .lesPlusPopulaireTitre {
+      grid-column: 1/-1;
+    }
   }
   .hebergementPopulairecontenant {
     display: flex;
@@ -303,11 +322,24 @@ h2 {
  /* Activité à Marseille */
  .activite {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
   column-gap: 2rem;
   margin: 4rem 0;
  }
+
+ @media (min-width: 1100px) {
+   .activite {
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+   }   
+ }
+
+@media (max-width: 1100px) {
+  .activite {
+    row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 12rem 12rem;
+  }
+}
  .activiteTitre {
   grid-column: 1/ -1;
  }
@@ -319,29 +351,41 @@ h2 {
   flex-direction: column;
   transition-duration: 0.1s;
  }
+ @media (min-width: 1100px) {
  #activiteUn {
    grid-row: 2/7;
    grid-column: 1/2;
  }
+}
+ @media (min-width: 1100px) {
  #activiteDeux {
    grid-row: 2/5;
    grid-column: 2/3;
  }
+}
+ @media (min-width: 1100px) {
  #activiteTrois {
    grid-row: 2/7;
    grid-column: 3/4;
  }
+}
+ @media (min-width: 1100px) {
  #activiteQuatre {
    grid-row: 2/3;
    grid-column: 4/5;
  }
+}
+ @media (min-width: 1100px) {
  #activiteCinq {
    grid-row: 6/7;
    grid-column: 2/3;
  }
+}
+ @media (min-width: 1100px) {
  #activiteSix {
    grid-row: 4/7;
    grid-column: 4/5;
+ }
  }
  .activiteImg {
   position: relative;
@@ -355,7 +399,6 @@ h2 {
  }
  .activiteImgTitre {
   margin: 1.2rem 1.5rem;
-
  }
 
 
