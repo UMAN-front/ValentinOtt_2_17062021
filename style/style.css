@@ -16,6 +16,14 @@ a {
   grid-template-columns: auto 2fr auto auto;
   grid-template-areas: "logo . navbar button";
 }
+
+@media screen and (max-width: 600px) {
+  .header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . button"
+                         "navbar navbar navbar";
+  }
+}
 h1 {
   font-size: 1.5em;
 }
@@ -29,6 +37,11 @@ h1 {
   align-items: center;
   grid-area: navbar;
 }
+@media screen and (max-width: 600px) {
+  .navigationMain {
+    order: 2;
+  }
+}
 .navigationMainLien {
   padding: 2rem;
   font-weight: 500;
@@ -39,9 +52,23 @@ h1 {
 }
 .navigationMainLien[data-active=true] {
   color: #0065FC;
-  border-top: 3px solid #0065FC;
-  border-top: none;
-  width: 50%;
+}
+@media screen and (min-width: 600px) {
+  .navigationMainLien[data-active=true] {
+    border-top: 3px solid #0065FC;
+  } 
+}
+@media screen and (max-width: 600px) {
+  .navigationMainLien[data-active=true] {
+    border-bottom-color: #0065FC;
+  } 
+}
+@media screen and (max-width: 600px) {
+  .navigationMainLien {
+    border-top: none;
+    border-bottom: 3px solid #F2F2F2;
+    width: 50%;
+  } 
 }
 .sinscrireMain {
   display: flex;
@@ -73,6 +100,12 @@ h1 {
     max-width: 100%;
     overflow: auto;
   }
+  @media screen and (max-width: 600px) {
+    .searchForm {
+      display: flex;
+      width: 100%;
+    }
+  }
   .searchFormWrapicon {
     background-color: #F2F2F2;
     padding: 1rem 1.25rem;
@@ -94,6 +127,11 @@ h1 {
     font-weight: bold;
     font-family: "Raleway", "Sans serif";
   }
+  @media screen and (max-width: 600px) {
+    .searchFormSearchinput {
+    flex: 1;
+    }
+  }
   .searchFormSearchinput::placeholder {
     font-family: "Raleway", "Sans serif";
     font-size: 1rem;
@@ -109,6 +147,11 @@ h1 {
     font-family: "Raleway", "Sans serif";
     font-size: 1rem;
     cursor: pointer;
+  }
+  @media screen and (max-width: 600px) {
+   .searchFormSubmitinputText {
+     display: none;
+   } 
   }
 /* Filtre de recherche */
 .filtres {
