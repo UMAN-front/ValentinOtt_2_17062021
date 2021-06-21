@@ -164,6 +164,11 @@ h1 {
      display: none;
    } 
   }
+  @media screen and (min-width: 1000px) {
+    .searchFormSubmitinputIcon {
+      display: none;
+    }
+  }
 /* Filtre de recherche */
 .filtres {
   display: flex;
