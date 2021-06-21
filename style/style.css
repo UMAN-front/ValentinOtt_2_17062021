@@ -153,22 +153,27 @@ h1 {
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 1rem 1rem 1rem 1rem;
+    border-radius: 0 1rem 1rem 0;
     padding: 0 1.2rem;
     font-family: "Raleway", "Sans serif";
     font-size: 1rem;
     cursor: pointer;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 650px) {
    .searchFormSubmitinputText {
      display: none;
-   } 
-  }
-  @media screen and (min-width: 1000px) {
-    .searchFormSubmitinputIcon {
-      display: none;
     }
+  .searchFormSubmitinput {
+       border-radius: 1rem 1rem 1rem 1rem;
+     }
   }
+  @media screen and (min-width: 650px) {
+ 
+    .fas.searchFormSubmitinputIcon {
+     display: none;
+   }
+  }
+
 /* Filtre de recherche */
 .filtres {
   display: flex;
@@ -189,11 +194,6 @@ h1 {
 @media screen and (max-width: 650px) {
   .titreFiltre {
     width: 100%;
-  }  
-}
-@media screen and (min-width: 650px) {
-  .searchFormSubmitinputIcon {
-    display: none;
   }  
 }
 h2 {
