@@ -526,21 +526,25 @@ h2 {
    max-width: 100%;
    width: 1440px;
    margin: auto;
-   padding: 0 2rem;
+   padding: 1.5rem 2rem;
    box-sizing: border-box;
   }
   @media screen and (max-width: 650px) {
   .footerSInformation {
     flex-direction: column;
+    padding: 1rem 2rem 0;
   }
+  .footerInformationColone:last-child {
+    padding: 0 0 2rem;
+    }
   }
-  .footerInformationColone {
-  padding: 1rem 1rem 0;
- }
+  @media (min-width: 1000px) {
+    .footerInformationColone {
+      width: 30%;
+      padding: 0 1rem 0;
+     }
+  }
  .footerInformationColoneLien {
   display: block;
   margin: 1rem 0;
- }
- .footerInformationColone:last-child {
-  padding: 1rem 1rem 2rem;
  }
